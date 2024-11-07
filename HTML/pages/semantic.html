@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+    <title>HTML Semantic Tags</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href="../index.html"><img src="../assets/images/html-logo.png" alt="Logo" id="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./structure.html">Basic Structure</a></li>
+                <li><a href="./tags.html">HTML Tags</a></li>
+                <li><a href="./textFormatting.html">Text Formatting</a></li>
+                <li><a href="./forms.html">HTML Forms</a></li>
+                <li><a href="#" class="active">HTML Semantic Tags</a></li>
+                <li><a href="./elements.html">HTML Elements</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <div>
+            <h2>HTML Semantic Tags</h2>
+            <ol>
+
+                <li>
+                    <p><code>&lt;header&gt;</code> : Represents introductory content, typically at the beginning of a section or a page.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">header</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">h1</span><span class="grey">&gt;Website Name&lt;/</span><span class="red">h1</span><span class="grey">&gt;</span>   
+    <span class="grey">&lt;</span><span class="red">nav</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">ul</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#home</span><span class="grey">"&gt;</span><span class="grey">Home</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#about</span><span class="grey">"&gt;</span><span class="grey">About</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#contact</span><span class="grey">"&gt;</span><span class="grey">Contact</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">ul</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">nav</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">header</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;nav&gt;</code> : Defines navigation links within the document.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">nav</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">ul</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#home</span><span class="grey">"&gt;</span><span class="grey">Home</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#about</span><span class="grey">"&gt;</span><span class="grey">About</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#contact</span><span class="grey">"&gt;</span><span class="grey">Contact</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">ul</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">nav</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;main&gt;</code> : Represents the main content of the document, excluding header, footer, and sidebar content.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">main</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">article</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Article Title&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;This is the content of the article.&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">article</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">aside</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">h3</span><span class="grey">&gt;Related Articles&lt;/</span><span class="red">h3</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">ul</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#related1</span><span class="grey">"&gt;</span><span class="grey">Related Article 1</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#related2</span><span class="grey">"&gt;</span><span class="grey">Related Article 2</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#related3</span><span class="grey">"&gt;</span><span class="grey">Related Article 3</span><span class="grey">&lt;/</span><span class="red">a</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">ul</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">aside</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">main</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+                    
+
+                <li>
+                    <p><code>&lt;section&gt;</code> : Represents a thematic grouping of content, typically with a heading.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">section</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Section Title&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;This is the content of the section.&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">section</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;article&gt;</code> : Represents self-contained content that can be independently distributed and reused.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">article</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Article Title&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;This is the content of the article.&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">article</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;aside&gt;</code> : Defines content that is tangentially related to the content around it, such as sidebars or pull quotes.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">aside</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Related Content Title&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;This is the related content.&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">aside</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;footer&gt;</code> : Represents footer content, typically at the end of a section or a page.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">footer</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span style="color: #15a5a5;">&ampcopy;</span> <span class="grey">2024 Example Company. All rights reserved.&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">footer</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;figure&gt;</code> : Represents self-contained content, such as images or diagrams, with optional caption.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">figure</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">img</span> <span class="green">src</span><span class="grey">="</span><span class="yellow">example.jpg</span> <span class="green">alt</span><span class="grey">="</span><span class="yellow">Example Image</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">figcaption</span><span class="grey">&gt;This is the caption for the image.&lt;/</span><span class="red">figcaption</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">figure</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;figcaption&gt;</code> : Represents the caption or legend for a <code>&lt;figure&gt;</code> element.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">figure</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">img</span> <span class="green">src</span><span class="grey">="</span><span class="yellow">example.jpg</span> <span class="green">alt</span><span class="grey">="</span><span class="yellow">Example Image</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">figcaption</span><span class="grey">&gt;This is the caption for the image.&lt;/</span><span class="red">figcaption</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">figure</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><code>&lt;details&gt;</code> : Defines additional details or information that can be toggled open or closed.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">details</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">summary</span><span class="grey">&gt;Click to expand&lt;/</span><span class="red">summary</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;Additional details here...&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">details</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <p><a href="#logo">&UpArrow;</a></p>
+    </footer>
+</body>
+</html>

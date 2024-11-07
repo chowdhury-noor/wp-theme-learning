@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: open-sens sans-serif;
+    height: 100vh;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* Header Section CSS */
+
+
+nav, footer {
+    background-color: #F0F0F0;
+    
+}
+
+nav header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+nav header img {
+    padding: 5px;
+    width: 80px;
+    height: 80px;
+    transition: .4s;
+}
+
+nav header img:hover {
+    transform: scale(1.2);
+}
+
+nav header ul {
+    width: 1200px;
+}
+
+nav header ul li {
+    display: inline-block;
+    
+    list-style: none;
+}
+
+nav header ul li a {
+    text-decoration: none;
+    color: #142534;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px;
+    transition: .5s;
+}
+
+nav header ul li a:hover {
+    color: #3a5975;
+}
+
+.active {
+    background-color: #142534;
+    color: #F0F0F0;
+    border-radius: 5px;
+    transition: .7s;
+}
+
+.active:hover {
+    background-color: #F0F0F0;
+    color: #3a5975;
+}
+
+
+
+/* Main Section CSS */
+
+
+main div {
+    padding: 30px;
+    margin: 20px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main div p {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+ol li {
+    margin: 3px 0 3px 25px;
+    font-size: 18px;
+}
+
+ol ul li {
+    list-style-type: disc;
+    margin-left: 35px;
+    padding: 5px 0;
+}
+
+code {
+    color: #5C5C5C;
+    background-color: #ebeaea;
+    margin: 0 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+section {
+    margin: 0 auto;
+    width: 70%;
+}
+
+pre {
+    background-color: #f5f4f4;
+    padding: 30px;
+    margin: 25px;
+    font-size: 18px;
+}
+
+.red {
+    color: #E93150;
+}
+
+.green {
+    color: #46B94E;
+}
+
+.yellow {
+    color: #E0AC00;
+}
+
+.grey {
+    color: #5C5C5C;
+}
+
+.silver {
+    color: #ABABAB;
+}
+
+
+
+/* Footer Section CSS */
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    padding: 20px;
+}
+
+footer p:nth-child(2) a {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 25px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+footer p:nth-child(2) a:hover {
+    cursor: pointer;
+    background-color: #e2e2e2;
+}

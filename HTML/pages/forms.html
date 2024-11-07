@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href="../index.html"><img src="../assets/images/html-logo.png" alt="Logo" id="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./structure.html">Basic Structure</a></li>
+                <li><a href="./tags.html">HTML Tags</a></li>
+                <li><a href="./textFormatting.html">Text Formatting</a></li>
+                <li><a href="#" class="active">HTML Forms</a></li>
+                <li><a href="./semantic.html">HTML Semantic Tags</a></li>
+                <li><a href="./elements.html">HTML Elements</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <div>
+            <h2>HTML Form Tags</h2>
+            <ol>
+                <li><code>&lt;form&gt;</code> : Defines the start of the form.</li>
+                <li><code>&lt;label&gt;</code> : Defines a label for an input field.</li>
+                <li><code>&lt;input&gt;</code> : Defines an input field, such as text, email, or submit button.</li>
+                <li><code>&lt;textarea&gt;</code> : Defines a multiline text input field.</li>
+                <li><code>&lt;div&gt;</code> : Defines a division or section within the form for organizing elements.</li>
+                <li><code>action="/submit-form"</code> : Specifies the URL where the form data will be sent upon submission.</li>
+                <li><code>method="post"</code> : Specifies the HTTP method used to send the form data (POST method).</li>
+                <li><code>for="name"</code> , <code>for="email"</code> , <code>for="message"</code> : Associates labels with input fields using the <code>for</code> attribute.</li>
+                <li><code>id="name"</code> , <code>id="email"</code> , <code>id="message"</code> : Provides unique identifiers for input fields.</li>
+                <li><code>name="name"</code> , <code>name="email"</code> , <code>name="message"</code> : Provides names for input fields, which are used when submitting the form data.</li>
+            </ol>
+
+            <pre>
+<span class="grey">&lt;&excl;</span><span class="silver">DOCTYPE html</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="red">html</span> <span class="green">lang</span><span class="grey">="</span><span class="yellow">en</span><span class="grey">"&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">head</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">charset</span><span class="grey">="</span><span class="yellow">UTF-8</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">viewport</span><span class="grey">"</span> <span class="green">content</span><span class="grey">="</span><span class="yellow">width=device-width, initial-scale=1.0</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">title</span><span class="grey">&gt;HTML Form Example&lt;/</span><span class="red">title</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">head</span><span class="grey">&gt;</span>
+    
+<span class="grey">&lt;</span><span class="red">body</span><span class="grey">&gt;</span>
+    
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Contact Form&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>   
+    
+    <span class="grey">&lt;</span><span class="red">form</span> <span class="green">action</span><span class="grey">="</span><span class="yellow">/submit-form</span><span class="grey">"</span> <span class="green">method</span><span class="grey">="</span><span class="yellow">post</span><span class="grey">"&gt;</span>
+        <span class="grey">&lt;</span><span class="red">div</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">label</span> <span class="green">for</span><span class="grey">="</span><span class="yellow">name</span><span class="grey">"&gt; Name:&lt;/</span><span class="red">label</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">text</span><span class="grey">"</span> <span class="green">id</span><span class="grey">="</span><span class="yellow">name</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">name</span><span class="grey">"</span> <span class="green">required</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">div</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">div</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">label</span> <span class="green">for</span><span class="grey">="</span><span class="yellow">email</span><span class="grey">"&gt; Email:&lt;/</span><span class="red">label</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">email</span><span class="grey">"</span> <span class="green">id</span><span class="grey">="</span><span class="yellow">email</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">email</span><span class="grey">"</span> <span class="green">required</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">div</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">div</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">label</span> <span class="green">for</span><span class="grey">="</span><span class="yellow">message</span><span class="grey">"&gt; Message:&lt;/</span><span class="red">label</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">textarea</span> <span class="green">id</span><span class="grey">="</span><span class="yellow">message</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">message</span><span class="grey">"</span> <span class="green">row</span><span class="grey">="</span><span class="yellow">4</span><span class="grey">"</span> <span class="green">required</span><span class="grey">"&gt;&lt;/</span><span class="red">textarea</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">div</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">div</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">submit</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">submit</span><span class="grey">"&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">div</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">body</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;/</span><span class="red">html</span><span class="grey">&gt;</span>
+            </pre>
+        </div>
+
+        <div>
+            <h2>All Input Types</h2>
+            <ol>
+                <li>
+                    <p><h4>Text</h4> : Allows users to enter a single-line text.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">text</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">username</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>Password</h4> : Similar to the text input but hides the entered characters for password entry.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">password</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">password</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+                
+                
+                <li>
+                    <p><h4>Email</h4> : Ensures the entered value is a valid email address.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">email</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">email</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+                
+                
+                <li>
+                    <p><h4>Number</h4> : Allows users to enter a number.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">number</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">quantity</span><span class="grey">"</span> <span class="green">min</span><span class="grey">="</span><span class="yellow">1</span><span class="grey">"</span> <span class="green">max</span><span class="grey">="</span><span class="yellow">10</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>Date</h4> : Provides a date input field.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">date</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">birthdate</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>Time</h4> : Allows users to enter a time.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">time</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">appointment_time</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>Checkbox</h4> : Allows users to select one or more options from a list.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">checkbox</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">interest</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">music</span><span class="grey">"&gt; Music</span>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">checkbox</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">interest</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">sports</span><span class="grey">"&gt; Sports</span>
+                    </pre>
+                </li>
+                
+                
+                <li>
+                    <p><h4>Radio</h4> : Allows users to select only one option from a list.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">radio</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">gender</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">male</span><span class="grey">"&gt; Male</span>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">radio</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">gender</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">female</span><span class="grey">"&gt; Female</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>File</h4> : Allows users to select and upload files.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">file</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">file_upload</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+                
+                
+                <li>
+                    <p><h4>Submit</h4> : Submits the form data to the server.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">submit</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">Submit</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+                
+                
+                <li>
+                    <p><h4>Reset</h4> : Resets the form fields to their default values.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">reset</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">Reset</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+                
+                
+                <li>
+                    <p><h4>Button</h4> : A clickable button with no default behavior.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">button</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">button</span><span class="grey">"&gt;Click Me&lt;/</span><span class="red">button</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+
+                <li>
+                    <p><h4>Hidden</h4> : Allows a value to be passed to the server without displaying it to the user.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">hidden</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">token</span><span class="grey">"</span> <span class="green">value</span><span class="grey">="</span><span class="yellow">abc123</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>Color</h4> : Allows users to select a color from a color picker.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">color</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">background_color</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+
+
+                <li>
+                    <p><h4>Range</h4> : Allows users to select a value from a range of values.</p>
+                    <pre>
+<span class="grey">&lt;</span><span class="red">input</span> <span class="green">type</span><span class="grey">="</span><span class="yellow">range</span><span class="grey">"</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">volume</span><span class="grey">"</span> <span class="green">min</span><span class="grey">="</span><span class="yellow">0</span><span class="grey">"</span> <span class="green">max</span><span class="grey">="</span><span class="yellow">100</span><span class="grey">"&gt;</span>
+                    </pre>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <p><a href="#logo">&UpArrow;</a></p>
+    </footer>
+</body>
+</html>

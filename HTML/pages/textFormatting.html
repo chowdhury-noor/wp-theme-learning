@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+    <title>HTML Text Formatting</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href="../index.html"><img src="../assets/images/html-logo.png" alt="Logo" id="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./structure.html">Basic Structure</a></li>
+                <li><a href="./tags.html">HTML Tags</a></li>
+                <li><a href="#" class="active">Text Formatting</a></li>
+                <li><a href="./forms.html">HTML Forms</a></li>
+                <li><a href="./semantic.html">HTML Semantic Tags</a></li>
+                <li><a href="./elements.html">HTML Elements</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <div>
+            <h2>Text Formatting Tags:</h2>
+            <ol>
+                <li><code>&lt;b&gt;</code> : <b>Bold</b> text.</li>
+                <li><code>&lt;strong&gt;</code> : Represents <strong>strong</strong> importance, typically displayed in bold.</li>
+                <li><code>&lt;i&gt;</code> : <i>Italic</i> text.</li>
+                <li><code>&lt;em&gt;</code> : Represents <em>emphasized</em> text, typically displayed in italics.</li>
+                <li><code>&lt;u&gt;</code> : <u>Underlined</u> text.</li>
+                <li><code>&lt;sup&gt;</code> : Superscript text (raised <sup>above</sup> the baseline).</li>
+                <li><code>&lt;sub&gt;</code> : Subscript text (lowered <sub>below</sub> the baseline ).</li>
+                <li><code>&lt;del&gt;</code> : Represents <del>deleted</del> or struck-through text.</li>
+                <li><code>&lt;ins&gt;</code> : Represents <ins>inserted</ins> text (typically underlined).</li>
+                <li><code>&lt;mark&gt;</code> : <mark>Highlights</mark> text with a background color.</li>
+                <li><code>&lt;abbr&gt;</code> : Defines an <abbr title="acronym">abbreviation</abbr> or acronym with optional full form.</li>
+                <li><code>&lt;blockquote&gt;</code> : Defines a block quotation.</li>
+                <li><code>&lt;q&gt;</code> : Defines an inline <q>quotation</q>.</li>
+                <li><code>&lt;cite&gt;</code> : Defines the title of a work <cite>cited</cite>.</li>
+                <li><code>&lt;code&gt;</code> : Defines a piece of computer <code>code</code>.</li>
+            </ol>
+            <pre>
+<span class="grey">&lt;&excl;</span><span class="silver">DOCTYPE html</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="red">html</span> <span class="green">lang</span><span class="grey">="</span><span class="yellow">en</span><span class="grey">"&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">head</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">charset</span><span class="grey">="</span><span class="yellow">UTF-8</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">viewport</span><span class="grey">"</span> <span class="green">content</span><span class="grey">="</span><span class="yellow">width=device-width, initial-scale=1.0</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">title</span><span class="grey">&gt;Text Formatting Example&lt;/</span><span class="red">title</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">head</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">body</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">b</span><span class="grey">&gt;Bold text&lt;/</span><span class="red">b</span><span class="grey">&gt;,</span> <span class="grey">&lt;</span><span class="red">strong</span><span class="grey">&gt;strong importance&lt;/</span><span class="red">strong</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">i</span><span class="grey">&gt;Italic text&lt;/</span><span class="red">i</span><span class="grey">&gt;,</span> <span class="grey">&lt;</span><span class="red">em</span><span class="grey">&gt;emphasized text&lt;/</span><span class="red">em</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">u</span><span class="grey">&gt;Underlined text&lt;/</span><span class="red">u</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;H</span><span class="grey">&lt;</span><span class="red">sub</span><span class="grey">&gt;2&lt;/</span><span class="red">sub</span><span class="grey">&gt;O (Subscript), E=mc</span><span class="grey">&lt;</span><span class="red">sup</span><span class="grey">&gt;2&lt;/</span><span class="red">sup</span><span class="grey">&gt; (Superscript)</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">del</span><span class="grey">&gt;Deleted text&lt;/</span><span class="red">del</span><span class="grey">&gt;,</span> <span class="grey">&lt;</span><span class="red">ins</span><span class="grey">&gt;Inserted text&lt;/</span><span class="red">ins</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">mark</span><span class="grey">&gt;Highlighted text&lt;/</span><span class="red">mark</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">abbr </span><span class="green">title</span><span class="grey">="</span><span class="yellow">World Wide Web</span><span class="grey">"&gt;WWW&lt;/</span><span class="red">abbr</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">blockquote</span><span class="grey">&gt;This is a blockquote&lt;/</span><span class="red">blockquote</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;She said, </span><span class="grey">&lt;</span><span class="red">q</span><span class="grey">&gt;Hello&excl;&lt;/</span><span class="red">q</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">cite</span><span class="grey">&gt;The Great Gatsby&lt;/</span><span class="red">cite</span><span class="grey">&gt;</span><span class="grey"> by F. Scott Fitzgerald&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">p</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="red">code</span><span class="grey">&gt;console.log("Hello, world!")&lt;/</span><span class="red">code</span><span class="grey">&gt;</span><span class="grey">&lt;/</span><span class="red">p</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">body</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;/</span><span class="red">html</span><span class="grey">&gt;</span>
+
+
+            </pre>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <p><a href="#logo">&UpArrow;</a></p>
+    </footer>
+</body>
+</html>
