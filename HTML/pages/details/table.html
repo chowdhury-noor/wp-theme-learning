@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
+    <title>HTML Table</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href="../../index.html"><img src="../../assets/images/html-logo.png" alt="Logo" id="logo"></a>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../structure.html">Basic Structure</a></li>
+                <li><a href="../tags.html">HTML Tags</a></li>
+                <li><a href="../textFormatting.html">Text Formatting</a></li>
+                <li><a href="../forms.html">HTML Forms</a></li>
+                <li><a href="../semantic.html">HTML Semantic Tags</a></li>
+                <li><a href="../elements.html">HTML Elements</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <div>
+            <h2>HTML Table Tags</h2>
+            <ol>
+                <li><code>&lt;table&gt;</code> : Defines the start of the table.</li>
+                <li><code>&lt;thead&gt;</code> : Defines the header section of the table.</li>
+                <li><code>&lt;tbody&gt;</code> : Defines the body section of the table.</li>
+                <li><code>&lt;tr&gt;</code> : Defines a row in the table.</li>
+                <li><code>&lt;th&gt;</code> : Defines a header cell in the table (typically used in the header row).</li>
+                <li><code>&lt;td&gt;</code> : Defines a data cell in the table (typically used in the body rows).</li>
+            </ol>
+            <pre>
+<span class="grey">&lt;&excl;</span><span class="silver">DOCTYPE html</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="red">html</span> <span class="green">lang</span><span class="grey">="</span><span class="yellow">en</span><span class="grey">"&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">head</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">charset</span><span class="grey">="</span><span class="yellow">UTF-8</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">viewport</span><span class="grey">"</span> <span class="green">content</span><span class="grey">="</span><span class="yellow">width=device-width, initial-scale=1.0</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">title</span><span class="grey">&gt;HTML Table Example&lt;/</span><span class="red">title</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">head</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">body</span><span class="grey">&gt;</span>
+
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Employee Details&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>   
+    
+    <span class="grey">&lt;</span><span class="red">table</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">thead</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">tr</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;ID&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Name&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Position&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Salary&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="red">tr</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;/</span><span class="red">thead</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">tbody</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;</span><span class="red">tr</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;1&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;John Doe&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Software Engineer&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;$60,000&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="red">tr</span><span class="grey">&gt;</span>            
+            <span class="grey">&lt;</span><span class="red">tr</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;2&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Jane Smith&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Project Manager&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;$75,000&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="red">tr</span><span class="grey">&gt;</span>            
+            <span class="grey">&lt;</span><span class="red">tr</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;3&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;Michael Johnson&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;UX Designer&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">th</span><span class="grey">&gt;$65,000&lt;/</span><span class="red">th</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="red">tr</span><span class="grey">&gt;</span>            
+        <span class="grey">&lt;/</span><span class="red">tbody</span><span class="grey">&gt;</span>
+
+    <span class="grey">&lt;/</span><span class="red">table</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;/</span><span class="red">body</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;/</span><span class="red">html</span><span class="grey">&gt;</span>
+            </pre>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <p><a href="#logo">&UpArrow;</a></p>
+    </footer>
+</body>
+</html>

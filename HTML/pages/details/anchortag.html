@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
+    <title>HTML Anchor Tag</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href="../../index.html"><img src="../../assets/images/html-logo.png" alt="Logo" id="logo"></a>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../structure.html">Basic Structure</a></li>
+                <li><a href="../tags.html">HTML Tags</a></li>
+                <li><a href="../textFormatting.html">Text Formatting</a></li>
+                <li><a href="../forms.html">HTML Forms</a></li>
+                <li><a href="../semantic.html">HTML Semantic Tags</a></li>
+                <li><a href="../elements.html">HTML Elements</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <div>
+            <h2>HTML Link Tag</h2>
+            <ol>
+                <li>
+                    <h4>Anchor <code>&lt;a&gt;</code> Tag:</h4>
+                    <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks. It has two essential attributes:</p>
+                    <ul>
+                        <li><code>href</code> : Specifies the URL of the page the link goes to. It can be an absolute URL (e.g., <code>https://example.com</code> ) or a relative URL (e.g., <code>about.html</code> , <code>#section</code> ).</li>
+                        <li><code>target</code> : Specifies where to open the linked document. Common values include <code>_self</code> (open in the same window or tab), <code>_blank</code> (open in a new window or tab)</li>
+                        <h4>Example</h4>:
+                        <p>Here's an example of an HTML link tag:</p>
+                        <pre>
+<span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">&lt;https://www.example.com&gt;</span><span class="grey">"</span> <span class="green">target</span><span class="grey">="</span><span class="yellow">_blank</span><span class="grey">"</span><span class="grey">&gt;Visit Example&lt;/</span><span class="red">a</span><span class="grey">&gt;</span>
+                        </pre>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Linking to Sections within a Page:</h4>
+                    <p>You can use links to navigate to specific sections within the same page by using the <code>id</code> attribute on elements you want to link to, and then using the <code>#</code> symbol followed by the <code>id</code> value as the <code>href</code> attribute in the link.</p>
+                    <pre>
+<span class="silver">&lt;&excl;-- Target Section --&gt;</span>
+<span class="grey">&lt;</span><span class="red">h2</span> <span class="green">id</span><span class="grey">="</span><span class="yellow">section</span><span class="grey">"</span><span class="grey">&gt;Section Title&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>
+
+<span class="silver">&lt;&excl;-- Link to the Target Section --&gt;</span>
+<span class="grey">&lt;</span><span class="red">a</span> <span class="green">href</span><span class="grey">="</span><span class="yellow">#section</span><span class="grey">"</span><span class="grey">&gt;Go to Section&lt;/</span><span class="red">a</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <p><a href="#logo">&UpArrow;</a></p>
+    </footer>
+</body>
+</html>

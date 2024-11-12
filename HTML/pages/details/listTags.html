@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/common.css">
+    <title>HTML List Tags</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href="../../index.html"><img src="../../assets/images/html-logo.png" alt="Logo" id="logo"></a>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../structure.html">Basic Structure</a></li>
+                <li><a href="../tags.html">HTML Tags</a></li>
+                <li><a href="../textFormatting.html">Text Formatting</a></li>
+                <li><a href="../forms.html">HTML Forms</a></li>
+                <li><a href="../semantic.html">HTML Semantic Tags</a></li>
+                <li><a href="../elements.html">HTML Elements</a></li>
+            </ul>
+        </header>
+    </nav>
+
+    <main>
+        <div>
+            <h2>HTML List Tags</h2>
+            <ol>
+                <li>
+                    <h4>Unordered List ( <code>&lt;ul&gt;</code> ):</h4>
+                    <p>An unordered list is a list of items marked with bullets.</p>
+                    <ul>
+                        <li><code>&lt;ul&gt;</code> : Defines the start of an unordered list.</li>
+                        <li><code>&lt;li&gt;</code> : Defines a list item within the unordered list.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Ordered List ( <code>&lt;ol&gt;</code> ):</h4>
+                    <p>An ordered list is a list of items marked with numbers or letters.</p>
+                    <ul>
+                        <li><code>&lt;ol&gt;</code> : Defines the start of an ordered list.</li>
+                        <li><code>&lt;li&gt;</code> : Defines a list item within the ordered list.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Description List ( <code>&lt;dl&gt;</code> ):</h4>
+                    <p>A description list consists of term-definition pairs.</p>
+                    <ul>
+                        <li><code>&lt;dl&gt;</code> : Defines the start of a description list.</li>
+                        <li><code>&lt;dt&gt;</code> : Defines a term (name) in the description list.</li>
+                        <li><code>&lt;dd&gt;</code> : Defines a description (value) associated with the term.</li>
+                    </ul>
+                </li>
+            </ol>
+            <pre>
+<span class="grey">&lt;&excl;</span><span class="silver">DOCTYPE html</span><span class="grey">&gt;</span>
+<span class="grey">&lt;</span><span class="red">html</span> <span class="green">lang</span><span class="grey">="</span><span class="yellow">en</span><span class="grey">"&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">head</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">charset</span><span class="grey">="</span><span class="yellow">UTF-8</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">meta</span> <span class="green">name</span><span class="grey">="</span><span class="yellow">viewport</span><span class="grey">"</span> <span class="green">content</span><span class="grey">="</span><span class="yellow">width=device-width, initial-scale=1.0</span><span class="grey">"&gt;</span>
+    <span class="grey">&lt;</span><span class="red">title</span><span class="grey">&gt;List Tags Example&lt;/</span><span class="red">title</span><span class="grey">&gt;</span>
+<span class="grey">&lt;/</span><span class="red">head</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;</span><span class="red">body</span><span class="grey">&gt;</span>
+
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Unordered List:&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>   
+    <span class="grey">&lt;</span><span class="red">ul</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 1&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 2&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 3&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 4&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">ul</span><span class="grey">&gt;</span>
+
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Ordered List:&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>   
+    <span class="grey">&lt;</span><span class="red">ol</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 1&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 2&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 3&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">li</span><span class="grey">&gt;Item 4&lt;/</span><span class="red">li</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">ol</span><span class="grey">&gt;</span>
+
+    <span class="grey">&lt;</span><span class="red">h2</span><span class="grey">&gt;Description List:&lt;/</span><span class="red">h2</span><span class="grey">&gt;</span>   
+    <span class="grey">&lt;</span><span class="red">dl</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">dt</span><span class="grey">&gt;HTML&lt;/</span><span class="red">dt</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">dd</span><span class="grey">&gt;HyperText Markup Language&lt;/</span><span class="red">dd</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">dt</span><span class="grey">&gt;CSS&lt;/</span><span class="red">dt</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">dd</span><span class="grey">&gt;Cascading Style Sheets&lt;/</span><span class="red">dd</span><span class="grey">&gt;</span>
+    <span class="grey">&lt;/</span><span class="red">dl</span><span class="grey">&gt;</span>        
+
+<span class="grey">&lt;/</span><span class="red">body</span><span class="grey">&gt;</span>
+
+<span class="grey">&lt;/</span><span class="red">html</span><span class="grey">&gt;</span>
+            </pre>
+        </div>
+    </main>
+
+    <footer class="grey">
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <p><a href="#logo">&UpArrow;</a></p>
+    </footer>
+</body>
+</html>
