@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+
+    <title>CSS Basics</title>
+</head>
+
+<body>
+    <header>
+        <a href="./home.html"><img src="../assets/images/css-logo.png" alt="Logo" id="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#" class="active">CSS Basics</a></li>
+                <li><a href="./cssProp.html">CSS Properties</a></li>
+                <li><a href="./cssSelectors.html">CSS Selectors</a></li>
+                <li><a href="./cssLayout.html">CSS Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>Adding CSS</h2>
+
+            <ol>
+                <li>
+                    <h4>Inline CSS</h4>
+                    <p>One of the ways of adding CSS to the webpage is by adding the styles inline directly to a HTML Element. Example:</p>
+                    <pre>
+        <span class="grey">&lt;</span><span class="red">div</span> <span class="purple">style<span class="grey">="</span><span class="flourosense">color: white;</span><span class="grey">"</span></span><span class="grey">&gt;</span>
+            <span class="silver">&lt;&excl;-- Content Goes Here -- &gt;</span>
+        <span class="grey">&lt;/</span><span class="red">div</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+                <li>
+                    <h4>Internal CSS</h4>
+                    <p>One of the ways of adding CSS to the webpage is by adding the Style Element inside the Head Element of the HTML file. Example:</p>
+                    <pre>
+        <span class="grey">&lt;!</span><span class="silver">DOCTYPE html</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">html</span> <span class="green">lang<span class="grey">="</span><span class="yellow">en</span><span class="grey">"</span></span><span class="grey">&gt;</span>
+            
+            <span class="grey">&lt;</span><span class="red">head</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">style</span><span class="grey">&gt;</span>
+                    <span class="purple">div</span> <span class="yellow">{</span>
+                        <span class="flourosense">color: antiquewhite;</span>
+                    <span class="yellow">}</span>
+                <span class="grey">&lt;/</span><span class="red">style</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="red">head</span><span class="grey">&gt;</span>
+
+            <span class="grey">&lt;</span><span class="red">body</span><span class="grey">&gt;</span> 
+                <span class="silver">&lt;&excl;-- Body Elements and Contents Go Here -- &gt;</span>
+            <span class="grey">&lt;/</span><span class="red">body</span><span class="grey">&gt;</span>
+
+        <span class="grey">&lt;/</span><span class="red">html</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+                <li>
+                    <h4>External CSS</h4>
+                    <p>One other way of adding CSS to the webpage is by linking external stylesheet inside the Head Element of HTML file and write css to that external file. Example</p>
+                    <pre>
+        <span class="grey">&lt;!</span><span class="silver">DOCTYPE html</span><span class="grey">&gt;</span>
+        <span class="grey">&lt;</span><span class="red">html</span> <span class="green">lang<span class="grey">="</span><span class="yellow">en</span><span class="grey">"</span></span><span class="grey">&gt;</span>
+            
+            <span class="grey">&lt;</span><span class="red">head</span><span class="grey">&gt;</span>
+                <span class="grey">&lt;</span><span class="red">link</span> <span class="purple">rel</span><span class="yellow">="</span><span class="flourosense">stylesheet</span><span class="yellow">"</span> <span class="purple">type</span><span class="yellow">="</span><span class="flourosense">text/css</span><span class="yellow">"</span> <span class="purple">href</span><span class="yellow">="</span><span class="flourosense">./style.css</span><span class="yellow">"</span><span class="grey">&gt;</span>
+            <span class="grey">&lt;/</span><span class="red">head</span><span class="grey">&gt;</span>
+
+            <span class="grey">&lt;</span><span class="red">body</span><span class="grey">&gt;</span> 
+                <span class="silver">&lt;&excl;-- Body Elements and Contents Go Here -- &gt;</span>
+            <span class="grey">&lt;/</span><span class="red">body</span><span class="grey">&gt;</span>
+
+        <span class="grey">&lt;/</span><span class="red">html</span><span class="grey">&gt;</span>
+                    </pre>
+                </li>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 All rights reserved by Noor Chowdhury</p>
+        <a href="#logo">&uparrow;</a>
+    </footer>
+</body>
+
+<script></script>
+
+
+</html>

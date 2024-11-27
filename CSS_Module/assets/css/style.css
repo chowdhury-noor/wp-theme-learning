@@ -1,0 +1,25 @@
+/* Main Section CSS */
+
+
+main{
+    background-color: #36454F;
+    color: #FEBAAD;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+}
+
+main h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: bold;
+}

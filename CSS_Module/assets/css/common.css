@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* li {
+    list-style: none;
+} */
+
+a, a:visited {
+    text-decoration: none;
+}
+
+body {
+    font-family: open-sens sans-serif;
+    height: 100vh;
+}
+
+
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEBAAD;    
+}
+
+header a {
+    color: #36454F;
+    font-size: 18px;
+    font-weight: bold;
+    flex: 1;    
+    height: 80px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px;
+    transition: .4s;
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
+
+header nav {
+    flex: 2;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-between;    
+    margin: 0 25px 0 0;
+}
+
+header > nav > ul li {
+    padding: 0 15px;
+    list-style: none;
+}
+
+header > nav > ul > li > a {
+    position: relative;
+    /* width: max-content; */
+    padding: 0 15px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+header > nav > ul > li > a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 10%;
+    border-radius: 30px;
+    background-color: #36454F;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    transition: all ease-in .3s;
+}
+
+header > nav > ul > li > a:hover::after {
+    width: 100%;
+}
+
+.active {
+    border-bottom: 2px solid #36454F;
+}
+
+
+
+/* Main Section */
+
+main div {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    /* height: calc(100vh - 80px); */
+}
+
+main div h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+main div ol li {
+    font-size: 18px;
+    margin: 3px 0 3px 25px;
+}
+
+main div ol li p {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+pre {
+    padding: 30px;
+    margin: 25px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+}
+
+.red {
+    color: #E93150;
+}
+
+.green {
+    color: #46B94E;
+}
+
+.yellow {
+    color: #E0AC00;
+}
+
+.grey {
+    color: #5C5C5C;
+}
+
+.silver {
+    color: #ABABAB;
+}
+
+.flourosense {
+    color: #78c759;
+}
+
+.purple {
+    color: purple;
+}
+
+
+
+/* Footer Section */
+
+footer {
+    background-color: #FEBAAD;
+    color: #36454F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer p {
+    padding: 30px;
+    margin: 0 20px;
+}
+
+footer  a {
+    color: #FEBAAD;
+    font-size: 20px;
+    margin-right: 60px;
+    background-color: #36454F;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+footer  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top: 0;
+    left: 100%;
+    background-color: #424e56;
+    z-index: -1;
+    transition: all ease-in-out .6s;
+}
+
+footer a:hover::before {
+    left: 0;
+}
